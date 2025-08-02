@@ -1,8 +1,5 @@
 # RealLog - 实时日志查看系统
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Node.js](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen.svg)](https://nodejs.org/)
-
 RealLog 是一个基于 WebSocket 和 HTTP 的实时日志查看系统，允许用户通过浏览器实时监控服务器上的日志文件变化。系统提供了美观的终端风格界面，支持移动设备自适应，并具有日志暂停、清空、重启等功能。
 
 演示地址：<https://realog.nicen.cn>，实时查看服务器上日志文件的变化
