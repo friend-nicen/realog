@@ -5,9 +5,9 @@
   "description": "A real-time log viewing system with WebSocket and HTTP support",
   "main": "server.js",
   "scripts": {
-    "start": "node start.js",
+    "start": "node server.js",
     "build": "rollup -c",
-    "dev": "node --watch start.js"
+    "dev": "node --watch server.js"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.8",
