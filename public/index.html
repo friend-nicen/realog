@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1e1e1e">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>实时日志查看器 | RealLog</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <div class="terminal-title">RealLog 实时日志查看器</div>
+            <div class="terminal-controls">
+                <button id="clearBtn" class="terminal-btn" title="清空日志"><i class="fas fa-trash-alt"></i> 清空</button>
+                <button id="restartBtn" class="terminal-btn" title="重新启动日志监控"><i class="fas fa-sync-alt"></i> 重启</button>
+                <button id="pauseBtn" class="terminal-btn" title="暂停/继续"><i class="fas fa-pause"></i> 暂停</button>
+            </div>
+        </div>
+        <div class="terminal-body">
+            <div class="terminal-overlay"></div>
+            <pre id="logContent" class="terminal-content"></pre>
+        </div>
+        <div class="terminal-footer">
+            <div id="status" class="status">正在连接...</div>
+            <div class="terminal-stats">
+                <span id="lineCount" class="stat-item">0 行</span>
+                <span class="stat-divider">|</span>
+                <span id="logPath" class="log-path"></span>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>

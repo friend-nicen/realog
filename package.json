@@ -1,0 +1,26 @@
+{
+  "name": "reallog",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A real-time log viewing system with WebSocket and HTTP support",
+  "main": "server.js",
+  "scripts": {
+    "start": "node start.js",
+    "build": "rollup -c",
+    "dev": "node --watch start.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.8",
+    "hono": "^4.7.4",
+    "ws": "^8.18.1",
+    "rollup": "^4.20.0",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4"
+  }
+}
