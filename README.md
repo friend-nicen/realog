@@ -18,8 +18,8 @@ RealLog 是一个基于 WebSocket 和 HTTP 的实时日志查看系统，允许�
 #### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/username/reallog.git
-cd reallog
+git clone https://github.com/friend-nicen/realog.git
+cd realog
 ```
 
 #### 2. 安装依赖
